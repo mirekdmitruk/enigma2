@@ -645,7 +645,7 @@ def QuickMenuEntryComponent(name, description, long_description = None, width=54
 			_(name),
 			MultiContentEntryText(pos=(90, 5), size=(width-90, 38), font=0, text = _(name)),
 			MultiContentEntryText(pos=(90, 38), size=(width-90, 30), font=1, text = _(description)),
-			MultiContentEntryPixmapAlphaBlend(pos=(15, 8), size=(60, 60), png = png),
+			MultiContentEntryPixmapAlphaBlend(pos=(15, 8), size=(60, 60), flags = BT_SCALE, png = png),
 			MultiContentEntryText(pos=(0, 0), size=(0, 0), font=0, text = _(long_description))
 		]
 	else:
@@ -653,7 +653,7 @@ def QuickMenuEntryComponent(name, description, long_description = None, width=54
 			_(name),
 			MultiContentEntryText(pos=(60, 3), size=(width-60, 25), font=0, text = _(name)),
 			MultiContentEntryText(pos=(60, 25), size=(width-60, 20), font=1, text = _(description)),
-			MultiContentEntryPixmapAlphaBlend(pos=(10, 5), size=(40, 40), png = png),
+			MultiContentEntryPixmapAlphaBlend(pos=(10, 5), size=(40, 40), flags = BT_SCALE, png = png),
 			MultiContentEntryText(pos=(0, 0), size=(0, 0), font=0, text = _(long_description))
 		]
 
